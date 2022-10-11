@@ -18,7 +18,10 @@ const QuizTopicSingle = () => {
             
             <div className="question-container">
                 {
-                    singleTopic.map((sTopicQuestion, index) => <SingleTopicQuestion key={sTopicQuestion.id} sTopicQuestion={sTopicQuestion} quizNo={index+1}></SingleTopicQuestion>)
+                    singleTopic.map((sTopicQuestion, index) =>
+                        <SingleTopicQuestion key={sTopicQuestion.id} sTopicQuestion={sTopicQuestion} quizNo={index + 1}>
+                        
+                    </SingleTopicQuestion>)
             }
             </div>
         </div>

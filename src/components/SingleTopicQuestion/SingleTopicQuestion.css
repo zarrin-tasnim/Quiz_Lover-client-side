@@ -9,9 +9,12 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.question {}
+.question {
+    margin-right: 10px;
+}
 .quizAndIcon{
     display: flex;
+    justify-content: space-between; 
 }
 
 
