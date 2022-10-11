@@ -1,6 +1,10 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import SingleTopicQuestion from '../SingleTopicQuestion/SingleTopicQuestion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+
+
 import './QuizTopicSingle.css';
 
 const QuizTopicSingle = () => {
