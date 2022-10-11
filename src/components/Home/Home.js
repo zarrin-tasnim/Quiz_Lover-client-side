@@ -4,7 +4,7 @@ import Images from '../Images/quiz-2.jpg'
 const Home = () => {
     return (
         <div>
-            
+            {/* Banner started */}
             <div className="row banner">
                     <div className="col-md-4 col-lg-6">
                         <div className="banner-text">
@@ -18,11 +18,13 @@ const Home = () => {
                             <img src={Images} class="img-fluid" alt="..." />
                         </div>
                     </div>
-                </div>
+            </div>
+            {/* Banner ended */}
+            {/* Topic name started */}
             <div className="topicsName">
                 
             </div>
-
+            {/* Topic name ended */}
         </div>
     );
 };
