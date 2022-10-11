@@ -35,7 +35,8 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
-        }
+        },
+        { path: '*', element: <div> Page not foundddd</div> }
       ]
     }
   ])
