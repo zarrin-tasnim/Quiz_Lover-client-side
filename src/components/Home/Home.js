@@ -1,7 +1,13 @@
 import React from 'react';
 import './Home.css';
 import Images from '../Images/quiz-2.jpg'
+import { useLoaderData } from 'react-router-dom';
+import QuizTopic from '../QuizTopic/QuizTopic';
 const Home = () => {
+    const quizes = useLoaderData();
+    // console.log(quizes);
+    const quiz = quizes.data;
+    console.log(quiz);
     return (
         <div>
             {/* Banner started */}
@@ -21,8 +27,11 @@ const Home = () => {
             </div>
             {/* Banner ended */}
             {/* Topic name started */}
-            <div className="topicsName">
-                
+            <div className="topicsName name-container">
+                {/* <h2>Length: {quiz.length}</h2> */}
+                {
+                    quiz.map(quizname => <QuizTopic key={quizname.id} quizname={quizname}></QuizTopic>)
+                }
             </div>
             {/* Topic name ended */}
         </div>

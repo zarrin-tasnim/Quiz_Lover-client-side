@@ -15,11 +15,16 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('t-shirts.json'),
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
           element: <Home></Home>
         },
         {
           path: '/quiz-topic',
+          loader: async () => {
+            return fetch('https://jsonplaceholder.typicode.com/users');
+          },
           element: <QuizTopicSingle></QuizTopicSingle>
         },
         {

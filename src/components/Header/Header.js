@@ -15,7 +15,6 @@ const Header = () => {
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <div className=''>
                             <Link to="/">Home</Link>
-                            <Link to="/quiz-topic">Quiz-Topics</Link>
                             <Link to="/statistics">Statistics</Link>
                             <Link to="/blog">Blog</Link>
                         </div>
