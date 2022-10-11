@@ -21,7 +21,7 @@
 
 @media screen and (max-width:1100px) {
     .quizTopicMainDetails {
-
+        width: 600px;
         margin: 10px auto;
     }
 
@@ -36,9 +36,9 @@
 }
 
 @media screen and (max-width:700px) {
-.quizTopicMainDetails {
-
-        
+    .quizTopicMainDetails {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .question-container {
@@ -48,5 +48,11 @@
         margin: 30px;
         justify-content: center;
 
+    }
+
+    .questionTopicName {
+        color: black;
+        font-weight: bold;
+        margin: 30px auto;
     }
 }
