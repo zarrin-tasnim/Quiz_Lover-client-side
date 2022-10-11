@@ -1,0 +1,18 @@
+.quizTopicMainDetails{
+    width: 600px;
+    margin: 10px auto;
+}
+.questionTopicName{
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.question-container{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    gap: 0px;
+    margin: 30px 250px;
+    justify-content: center;
+
+}

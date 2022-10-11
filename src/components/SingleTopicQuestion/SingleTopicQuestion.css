@@ -1,0 +1,10 @@
+.topicQuestion-container{
+    width: 500px;
+    margin: 20px;
+    font-size: 22px;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}

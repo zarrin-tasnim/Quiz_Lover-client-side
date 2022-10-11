@@ -21,9 +21,10 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/quiz-topic',
-          loader: async () => {
-            return fetch('https://jsonplaceholder.typicode.com/users');
+          path: '/quiz-topic/:quizID',
+          loader: async ({ params }) => {
+            //  console.log(params);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizID}`);
           },
           element: <QuizTopicSingle></QuizTopicSingle>
         },
