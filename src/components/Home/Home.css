@@ -1,0 +1,23 @@
+.banner {
+    background-color: rgb(32, 55, 55);
+    height: 300px;
+    margin: 2px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-img {
+    
+}
+
+.banner-img img {
+    width: 800px;
+    height: 300px;
+}
+
+.banner-text {
+    margin-top: 10px;
+    
+}

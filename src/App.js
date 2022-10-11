@@ -3,6 +3,8 @@ import './App.css';
 import Main from './layout/Main';
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
+import Blog from './components/Blog/Blog';
+import QuizTopicSingle from './components/QuizTopicSingle/QuizTopicSingle';
 
 
 function App() {
@@ -17,8 +19,16 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/order',
+          path: '/quiz-topic',
+          element: <QuizTopicSingle></QuizTopicSingle>
+        },
+        {
+          path: '/statistics',
           element: <Statistics></Statistics>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
         }
       ]
     }
