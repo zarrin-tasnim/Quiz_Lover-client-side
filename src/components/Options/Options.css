@@ -1,9 +1,10 @@
 .option1 {
-    width: 200px;
-    height: 80px;
+    width: 280px;
+    height: 180px;
     border-radius: 20px;
     background-color: black;
     color: white;
     margin: 10px;
     padding: 10px;
 }
+

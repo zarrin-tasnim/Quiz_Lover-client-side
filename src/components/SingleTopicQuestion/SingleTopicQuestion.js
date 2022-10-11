@@ -2,13 +2,13 @@ import React from 'react';
 import Options from '../Options/Options';
 import './SingleTopicQuestion.css';
 
-const SingleTopicQuestion = ({ sTopicQuestion }) => {
+const SingleTopicQuestion = ({ sTopicQuestion, quizNo }) => {
 
     return (
         
         <div className='topicQuestion-container'>
             <div className="topicQuestion">
-                <h3>Quiz { }:{sTopicQuestion.question}</h3>
+                <h3 className='question'>Quiz {quizNo}:{sTopicQuestion.question}</h3>
                 
                 <div className="options">
                     

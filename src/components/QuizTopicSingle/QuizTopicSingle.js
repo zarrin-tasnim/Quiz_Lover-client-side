@@ -5,7 +5,7 @@ import './QuizTopicSingle.css';
 
 const QuizTopicSingle = () => {
     const singleTopics = useLoaderData();
-    console.log(singleTopics);
+    // console.log(singleTopics);
     const singleTopic = singleTopics.data.questions;
     console.log(singleTopic);
     return (
@@ -14,7 +14,7 @@ const QuizTopicSingle = () => {
             
             <div className="question-container">
                 {
-                    singleTopic.map(sTopicQuestion => <SingleTopicQuestion key={sTopicQuestion.id} sTopicQuestion={sTopicQuestion}></SingleTopicQuestion>)
+                    singleTopic.map((sTopicQuestion, index) => <SingleTopicQuestion key={sTopicQuestion.id} sTopicQuestion={sTopicQuestion} quizNo={index+1}></SingleTopicQuestion>)
             }
             </div>
         </div>
