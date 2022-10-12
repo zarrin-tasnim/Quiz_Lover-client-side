@@ -32,7 +32,7 @@ const SingleTopicQuestion = ({ sTopicQuestion, quizNo }) => {
                 <div className="quizAndIcon">
                     <h3 className='question'>Quiz {quizNo}:{sTopicQuestion.question}</h3>
                     <FontAwesomeIcon onClick={notify} icon={faEye} />
-                    <ToastContainer autoClose={800} />
+                    <ToastContainer autoClose={1000} />
                 </div>
                 <div className="options">
                     

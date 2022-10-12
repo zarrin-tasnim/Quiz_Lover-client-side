@@ -13,7 +13,7 @@ const QuizTopic = ({ quizname }) => {
                     <div className="card-body">
                         <h5 className="card-title">{name}</h5>
                     <h5>Total: {total}</h5>
-                    <Link to={`/quiz-topic/${id}`}><a className="btn btn-primary">Go somewhere</a></Link>
+                    <Link to={`/quiz-topic/${id}`}><a className="btn btn-primary">Start your practice</a></Link>
                     </div>
             </div>
         </div>
