@@ -1,3 +1,26 @@
+<!-- My Project -->
+
+Project Name:  Quiz Lover
+
+Netlify Live LInk: 
+
+My React app's Features:
+
+> By clicking any quiz topics button in home page, we can go to this selected topic page by using dynamic route and can see the selected Quiz topic's questions.
+
+> After clicking any answer in quiz page ,if the answer is wrong we can see a toast which will tell you if the answer is  wrong or right.
+
+> In the selected quiz page , there will be a icon in each question , if you click it you will watch the correct answer.
+
+> In Statistics page, we can watch how many question set we have for each quiz topics.
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
