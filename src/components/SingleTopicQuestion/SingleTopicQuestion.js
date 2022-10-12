@@ -11,6 +11,17 @@ import 'react-toastify/dist/ReactToastify.css';
 const SingleTopicQuestion = ({ sTopicQuestion, quizNo }) => {
    
     const { correctAnswer } = sTopicQuestion;
+    const option1 = sTopicQuestion.options;
+
+    const optionHandle = (option) => {
+        if (option === correctAnswer) {
+            toast.success("Correct Answer");
+        }
+        else {
+            toast.error("Wrong Answer"); 
+        }
+    }
+
     const notify = () => toast(`${correctAnswer}`, {
         position: toast.POSITION.TOP_CENTER
     });
@@ -26,7 +37,7 @@ const SingleTopicQuestion = ({ sTopicQuestion, quizNo }) => {
                 <div className="options">
                     
                         {
-                            sTopicQuestion.options.map(option => <Options key={option.id} option={option}></Options>)
+                        sTopicQuestion.options.map(option => <Options key={option.id} option={option} optionHandle={optionHandle}></Options>)
                         } 
                 </div>
             </div>
