@@ -2,7 +2,7 @@
 
 Project Name:  Quiz Lover
 
-Netlify Live LInk: 
+Netlify Live LInk: <a href="https://aquamarine-speculoos-0e0fab.netlify.app/" target="_blank">Live website link</a>
 
 My React app's Features:
 
